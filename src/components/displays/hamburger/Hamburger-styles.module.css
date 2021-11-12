@@ -1,0 +1,30 @@
+.container > span {
+  display: block;
+  background: var(--primary-color);
+  height: 2px;
+  width: 18.5px;
+  border-radius: 10px;
+  transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease,
+    height 0.3s ease;
+  margin: 3.5px 2px;
+}
+
+.one {
+  transform-origin: left;
+}
+
+.three {
+  transform-origin: left;
+}
+
+.menuClose:hover > .one {
+  transform: rotate(45deg) translate(-1px, -2px);
+}
+
+.menuClose:hover > .three {
+  transform: rotate(-45deg) translate(0px, 1px);
+}
+
+.menuClose:hover > .two {
+  opacity: 0;
+}
