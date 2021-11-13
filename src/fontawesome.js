@@ -1,4 +1,8 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHamburger } from '@fortawesome/free-solid-svg-icons';
+import {
+  faStickyNote,
+  faPhoneAlt,
+  faDirections,
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faSearch, faBookMedical, faCog);
+library.add(faStickyNote, faPhoneAlt, faDirections);

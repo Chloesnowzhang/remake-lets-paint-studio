@@ -1,0 +1,23 @@
+.container {
+  display: none;
+}
+
+.containerExtended {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 251px;
+  height: 100vh;
+  box-shadow: 2px 0 4px var(--shadow-color);
+  padding-top: 103px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: var(--secondary-color);
+}
+
+.containerExtended > span:first-child,
+.containerExtended > span:nth-child(2) {
+  margin-bottom: 30px;
+}

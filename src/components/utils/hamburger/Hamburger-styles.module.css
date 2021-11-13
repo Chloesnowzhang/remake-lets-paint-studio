@@ -17,14 +17,14 @@
   transform-origin: left;
 }
 
-.menuClose:hover > .one {
+.menuClose > .one {
   transform: rotate(45deg) translate(-1px, -2px);
 }
 
-.menuClose:hover > .three {
+.menuClose > .three {
   transform: rotate(-45deg) translate(0px, 1px);
 }
 
-.menuClose:hover > .two {
+.menuClose > .two {
   opacity: 0;
 }

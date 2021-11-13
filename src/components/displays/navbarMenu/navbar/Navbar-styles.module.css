@@ -11,6 +11,7 @@
   align-items: center;
   box-shadow: 0 1px 3px var(--shadow-color);
   z-index: 3;
+  background: var(--secondary-color);
 }
 
 .name {
@@ -20,4 +21,8 @@
 
 .hamburger {
   margin-right: 35px;
+}
+
+.menu {
+  display: none;
 }
