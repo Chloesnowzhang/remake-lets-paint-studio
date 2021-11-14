@@ -28,17 +28,6 @@
 
 @media (min-width: 577px) {
   .container {
-    height: 65px;
-    font-size: var(--font-size-14);
-  }
-
-  .container > span > span:first-child {
-    margin-bottom: 3.5px;
-  }
-}
-
-@media (min-width: 769px) {
-  .container {
     display: none;
   }
 }
