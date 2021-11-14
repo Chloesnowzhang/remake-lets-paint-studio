@@ -4,7 +4,10 @@ import styles from './Hamburger-styles.module.css';
 
 const Hamburger = ({ extended, setExtended }) => {
   return (
-    <div className={`${styles.container} ${extended && styles.menuClose}`}>
+    <div
+      className={`${styles.container} ${extended && styles.menuClose}`}
+      onClick={() => setExtended(!extended)}
+    >
       <span className={styles.one}></span>
       <span className={styles.two}></span>
       <span className={styles.three}></span>

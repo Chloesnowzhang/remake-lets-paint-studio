@@ -9,14 +9,21 @@
   display: flex;
   flex-flow: row;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 0 1px 3px var(--shadow-color);
-  z-index: 3;
+  z-index: 4;
   background: var(--secondary-color);
+}
+
+.left {
+  display: flex;
+  flex-flow: row;
 }
 
 .name {
   font-family: var(--dancing-script);
   font-size: var(--font-size-18);
+  font-weight: var(--font-weight-bold);
 }
 
 .hamburger {
@@ -25,4 +32,37 @@
 
 .menu {
   display: none;
+}
+
+@media (min-width: 577px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .name {
+    font-size: var(--font-size-22);
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    height: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .menu > span {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .menu > span > span:first-child {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }

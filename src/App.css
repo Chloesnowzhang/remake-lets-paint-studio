@@ -13,6 +13,8 @@
   --open-sans: 'Open Sans', sans-serif;
 
   /* font sizes */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
   --font-size-16: 16px;
   --font-size-18: 18px;
   --font-size-32: 32px;
@@ -49,18 +51,6 @@ body {
   background-color: var(--secondary-color);
   min-height: 100vh;
   position: relative;
-}
-
-@media (min-width: 576px) {
-  body {
-    font-size: var(--md-screen-sm-font);
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    font-size: var(--lg-screen-sm-font);
-  }
 }
 
 img {
@@ -102,7 +92,7 @@ textarea:focus {
   text-decoration-thickness: 2px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 577px) {
   .active {
     text-decoration-thickness: 3px;
   }
@@ -118,14 +108,23 @@ textarea:focus {
   width: 100%;
   display: flex;
   flex-flow: column;
+  padding-top: 70px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 577px) {
   .container {
-    text-align: justify;
-    padding: var(--nav-footer-md-height) 0;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 64px;
   }
 }
 
@@ -144,7 +143,7 @@ textarea:focus {
 }
 
 .main-content-container {
-  padding: var(--spacing-sm-screen) 5%;
+  padding: 2px 8px 0;
   width: 100%;
 }
 

@@ -8,7 +8,7 @@ const NavbarMenu = () => {
   return (
     <div>
       <Navbar extended={extended} setExtended={setExtended} />
-      <DropdownMenu />
+      <DropdownMenu extended={extended} />
     </div>
   );
 };

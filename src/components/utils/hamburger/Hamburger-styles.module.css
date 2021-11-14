@@ -28,3 +28,17 @@
 .menuClose > .two {
   opacity: 0;
 }
+
+@media (min-width: 577px) {
+  .container > span {
+    margin: 4.5px 2px;
+  }
+
+  .menuClose > .one {
+    transform: rotate(45deg) translate(1px, -1px);
+  }
+
+  .menuClose > .three {
+    transform: rotate(-45deg) translate(0px, 1px);
+  }
+}
