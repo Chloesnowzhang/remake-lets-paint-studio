@@ -56,14 +56,14 @@
     flex-shrink: 0;
   }
 
+  .menuItem:last-of-type,
+  .menuItem:nth-last-child(2) {
+    margin-left: 1rem;
+  }
+
   .menuItem > span {
     padding-left: 12px;
     padding-right: 1px;
-  }
-
-  .menu > span > span:first-child {
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }
 
@@ -93,20 +93,8 @@
     flex-shrink: 0;
   }
 
-  .menu {
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: flex;
-    flex-flow: row;
-  }
-
-  .menu > span {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .menu > span > span:first-child {
-    padding-left: 12px;
-    padding-right: 12px;
+  .menuItem:last-of-type,
+  .menuItem:nth-last-child(2) {
+    margin-left: 28px;
   }
 }
