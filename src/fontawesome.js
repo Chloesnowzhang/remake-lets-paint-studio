@@ -3,6 +3,14 @@ import {
   faStickyNote,
   faPhoneAlt,
   faDirections,
+  faChevronRight,
+  faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faStickyNote, faPhoneAlt, faDirections);
+library.add(
+  faStickyNote,
+  faPhoneAlt,
+  faDirections,
+  faChevronLeft,
+  faChevronRight
+);

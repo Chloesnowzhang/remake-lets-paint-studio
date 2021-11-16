@@ -1,0 +1,87 @@
+.container {
+  width: var(--slide-img-width);
+  height: var(--slide-img-width);
+  overflow: hidden;
+  position: relative;
+}
+
+.leftArr,
+.rightArr {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: rgba(202, 199, 199, 0.534);
+}
+
+.leftArr {
+  left: -10px;
+  transform: rotate(-90deg);
+}
+
+.rightArr {
+  right: -10px;
+  transform: rotate(90deg);
+}
+
+.breakpoint0 ~ .leftArr {
+  display: none;
+}
+
+.breakpoint8 ~ .rightArr {
+  display: none;
+}
+
+.slides {
+  width: var(--slide-img-width);
+  height: var(--slide-img-width);
+  display: flex;
+  flex-flow: row-reverse;
+  position: absolute;
+  top: 0;
+  transition: left 0.25s ease;
+}
+
+.slides picture {
+  width: var(--slide-img-width);
+}
+
+.slides img {
+  width: var(--slide-img-width);
+}
+
+.breakpoint0 {
+  left: 0;
+}
+
+.breakpoint1 {
+  left: var(--slide-img-width);
+}
+
+.breakpoint2 {
+  left: calc(var(--slide-img-width) * 2);
+}
+
+.breakpoint3 {
+  left: calc(var(--slide-img-width) * 3);
+}
+
+.breakpoint4 {
+  left: calc(var(--slide-img-width) * 4);
+}
+
+.breakpoint5 {
+  left: calc(var(--slide-img-width) * 5);
+}
+
+.breakpoint6 {
+  left: calc(var(--slide-img-width) * 6);
+}
+
+.breakpoint7 {
+  left: calc(var(--slide-img-width) * 7);
+}
+
+.breakpoint8 {
+  left: calc(var(--slide-img-width) * 8);
+}

@@ -1,23 +1,15 @@
 import React from 'react';
+import ImageSlider from '../utils/imageSlider/ImageSlider';
 
-import images from './images';
 import styles from './Gallery-styles.module.css';
 
 const Gallery = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.name}>GALLERY</div>
-      <div className={styles.images}>
-        {images.map((image) => (
-          <picture key={image.id} className={`${styles['img' + image.id]}`}>
-            <source srcSet={image.lgUrl} media="(min-width: 768px)" />
-            <img alt="Business photo" src={image.smUrl} />
-          </picture>
-        ))}
-      </div>
-
+      <ImageSlider />
       <div>More photoes</div>
-    </div>
+    </section>
   );
 };
 

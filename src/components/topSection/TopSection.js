@@ -5,7 +5,7 @@ import HeaderImg from './headerImg/HeaderImg';
 
 const TopSection = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div>
         <HeaderImg />
       </div>
@@ -15,7 +15,7 @@ const TopSection = () => {
         <div className={styles.notif}>Open today until 5:00 PM</div>
         <div className={styles.quote}>GET QUOTE</div>
       </div>
-    </div>
+    </section>
   );
 };
 

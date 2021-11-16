@@ -11,22 +11,3 @@
   font-weight: var(--font-weight-bold);
   margin-bottom: 40px;
 }
-
-.images {
-  width: calc(100vw - 18px * 2);
-  height: calc(100vw - 18px * 2);
-  display: flex;
-  flex-flow: row;
-  overflow: hidden;
-  position: relative;
-}
-
-.images img {
-  width: calc(100vw - 18px * 2);
-}
-
-.img1 {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
