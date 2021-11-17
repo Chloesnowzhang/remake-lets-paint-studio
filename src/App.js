@@ -5,6 +5,7 @@ import NavbarMenu from './components/displays/navbarMenu/NavbarMenu';
 import TopSection from './components/topSection/TopSection';
 import Divider from './components/displays/divider/Divider';
 import Gallery from './components/gallery/Gallery';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <TopSection />
         <Divider />
         <Gallery />
+        <Divider />
+        <Contact />
       </div>
       <BottomActionList />
     </div>

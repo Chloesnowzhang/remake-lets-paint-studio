@@ -1,0 +1,56 @@
+.container {
+  color: var(--third-color);
+}
+
+.btn {
+  padding: 9px 28px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact,
+.address {
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.address address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-style: normal;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact > span:first-child,
+.contact > span:nth-child(2),
+.address > span:first-child,
+.address > span:nth-child(2),
+.hours > span:first-child {
+  margin-bottom: 1rem;
+}
+
+.contact > span:first-child,
+.address > span:first-child,
+.hours > span {
+  color: var(--primary-color);
+}
+
+.hours th {
+  font-weight: var(--font-weight-regular);
+}
