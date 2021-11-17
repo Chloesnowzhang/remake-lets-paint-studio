@@ -11,3 +11,27 @@
   font-weight: var(--font-weight-bold);
   margin-bottom: 40px;
 }
+
+.gallerySlider {
+  width: 100%;
+}
+
+.galleryImages {
+  display: none;
+}
+
+.more {
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+@media (min-width: 993px) {
+  .gallerySlider {
+    display: none;
+  }
+
+  .galleryImages {
+    display: block;
+    width: 100%;
+  }
+}

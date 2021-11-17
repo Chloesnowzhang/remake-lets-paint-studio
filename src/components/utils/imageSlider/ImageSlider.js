@@ -23,19 +23,28 @@ const ImageSlider = () => {
 
   return (
     <div className={styles.container}>
-      <div className={`${styles.slides} ${styles[`breakpoint` + current]}`}>
-        {images.map((image, index) => (
-          <picture key={index}>
-            <source srcSet={image.lgImg} media="(min-width: 768px)" />
-            <img alt="Business" src={image.smImg} />
-          </picture>
-        ))}
+      <div className={styles.slider}>
+        <div className={`${styles.slides} ${styles[`breakpoint` + current]}`}>
+          {images.map((image, index) => (
+            <picture key={index}>
+              <source srcSet={image.lgImg} media="(min-width: 768px)" />
+              <img alt="Business" src={image.smImg} />
+            </picture>
+          ))}
+        </div>
+        <div className={styles.leftArr} onClick={slidePrev}>
+          <FontAwesomeIcon icon="leaf" />
+        </div>
+        <div className={styles.rightArr} onClick={slideNext}>
+          <FontAwesomeIcon icon="leaf" />
+        </div>
       </div>
-      <div className={styles.leftArr} onClick={slidePrev}>
-        <Arrow />
+
+      <div className={styles.leftArr2} onClick={slidePrev}>
+        <FontAwesomeIcon icon="leaf" />
       </div>
-      <div className={styles.rightArr} onClick={slideNext}>
-        <Arrow />
+      <div className={styles.rightArr2} onClick={slideNext}>
+        <FontAwesomeIcon icon="leaf" />
       </div>
     </div>
   );
