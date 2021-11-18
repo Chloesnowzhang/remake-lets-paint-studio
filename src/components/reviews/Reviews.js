@@ -1,7 +1,14 @@
 import React from 'react';
 
+import styles from './Reviews-styles.module.css';
+
 const Reviews = () => {
-  return <div>check how to get testimony from google Reviews</div>;
+  return (
+    <section className={styles.container}>
+      <span>WRITE A REVIEW</span>
+      <span>MORE REVIEWS</span>
+    </section>
+  );
 };
 
 export default Reviews;

@@ -5,6 +5,14 @@ import styles from './Contact-styles.module.css';
 const Contact = () => {
   return (
     <section className={styles.container}>
+      <div className={`section-title`}>CONTACT US</div>
+      <div className={styles.map}>
+        <iframe
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEbWZToJp1moRtfQN1qXCxTw&key=AIzaSyB0hcBwxZvuc-4sk1u7OxRHb5lVuPYb7fQ"
+        ></iframe>
+      </div>
       <div className={styles.details}>
         <div className={styles.contact}>
           <span className="font-weight-bold">Contact</span>
@@ -24,34 +32,36 @@ const Contact = () => {
         <div className={styles.hours}>
           <span className="font-weight-bold">Business hours</span>
           <table>
-            <tr>
-              <th>Mon: </th>
-              <td>10:00 AM – 5:00 PM</td>
-            </tr>
-            <tr>
-              <th>Tue:</th>
-              <td>Closed</td>
-            </tr>
-            <tr>
-              <th>Wed: </th>
-              <td>10:00 AM – 5:00 PM</td>
-            </tr>
-            <tr>
-              <th>Thu: </th>
-              <td>10:00 AM – 5:00 PM</td>
-            </tr>
-            <tr>
-              <th>Fri: </th>
-              <td>10:00 AM – 5:00 PM</td>
-            </tr>
-            <tr>
-              <th>Sat: </th>
-              <td>10:00 AM – 5:00 PM</td>
-            </tr>
-            <tr>
-              <th>Sun: </th>
-              <td>10:00 AM – 5:00 PM</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Mon: </th>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <th>Tue:</th>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <th>Wed: </th>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <th>Thu: </th>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <th>Fri: </th>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <th>Sat: </th>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+              <tr>
+                <th>Sun: </th>
+                <td>10:00 AM – 5:00 PM</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

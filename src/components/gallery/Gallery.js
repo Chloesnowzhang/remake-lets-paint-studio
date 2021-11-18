@@ -7,7 +7,7 @@ import GalleryImages from './GalleryImages';
 const Gallery = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.name}>GALLERY</div>
+      <div className={`section-title`}>GALLERY</div>
       <div className={styles.gallerySlider}>
         <ImageSlider />
       </div>

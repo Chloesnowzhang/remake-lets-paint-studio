@@ -1,0 +1,44 @@
+.container {
+  padding: 40px 10%;
+  width: 100%;
+}
+
+.review {
+  margin-top: 40px;
+}
+
+.stars,
+.quote > blockquote {
+  margin-bottom: var(--font-size-16);
+  color: var(--third-color);
+}
+
+.stars {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stars > span {
+  margin-right: 0.15rem;
+}
+
+.stars > span:last-of-type {
+  margin-left: 1rem;
+  opacity: 0.8;
+}
+
+.stars > span > svg {
+  color: rgb(251, 188, 4);
+}
+
+.quote > cite {
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 993px) {
+  .container {
+    padding: 60px 10%;
+  }
+}

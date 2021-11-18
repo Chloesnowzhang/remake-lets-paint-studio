@@ -6,14 +6,9 @@
   align-items: center;
 }
 
-.name {
-  font-family: var(--dancing-script);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 40px;
-}
-
 .gallerySlider {
   width: 100%;
+  margin-top: 40px;
 }
 
 .galleryImages {
@@ -26,6 +21,11 @@
 }
 
 @media (min-width: 993px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .gallerySlider {
     display: none;
   }
@@ -33,5 +33,10 @@
   .galleryImages {
     display: block;
     width: 100%;
+    margin-top: 60px;
+  }
+
+  .more {
+    margin-top: 60px;
   }
 }

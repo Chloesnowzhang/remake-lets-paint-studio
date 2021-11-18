@@ -99,3 +99,10 @@
     margin-left: 28px;
   }
 }
+
+@media (min-width: 1201px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

@@ -157,7 +157,7 @@ textarea:focus {
 
 @media (min-width: 1080px) {
   .main-content-container {
-    max-width: 1080px;
+    width: 75vw;
     padding-left: 0;
     padding-right: 0;
     align-items: center;
@@ -165,38 +165,18 @@ textarea:focus {
   }
 }
 
-/* ILLUSTRATION FRAMES */
-.frame {
-  box-shadow: var(--inner-shadow);
-  padding: var(--spacing-sm-screen);
+.section-title {
+  font-family: var(--dancing-script);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold) p;
+  text-align: center;
+  font-size: var(--font-size-18);
 }
 
-@media (min-width: 576px) {
-  .frame {
-    padding: var(--spacing-md-screen);
+@media (min-width: 993px) {
+  .section-title {
+    font-size: 20px;
   }
-}
-
-@media (min-width: 768px) {
-  .frame {
-    padding: var(--spacing-lg-screen);
-  }
-}
-
-@media (min-width: 992px) {
-  .frame {
-    padding: var(--spacing-xl-screen);
-  }
-}
-
-@media (min-width: 1200px) {
-  .frame {
-    padding: var(--spacing-xxl-screen);
-  }
-}
-
-.frame:hover {
-  box-shadow: var(--inner-shadow-hover);
 }
 
 /* UNIVERSAL */

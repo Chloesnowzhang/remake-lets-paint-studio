@@ -6,6 +6,8 @@ import TopSection from './components/topSection/TopSection';
 import Divider from './components/displays/divider/Divider';
 import Gallery from './components/gallery/Gallery';
 import Contact from './components/contact/Contact';
+import Reviews from './components/reviews/Reviews';
+import Testimonials from './components/reviews/Testimonials';
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
       <NavbarMenu />
       <div className="main-content-container">
         <TopSection />
+        <Divider />
+        <Testimonials />
+        <Divider />
+        <Reviews />
         <Divider />
         <Gallery />
         <Divider />
