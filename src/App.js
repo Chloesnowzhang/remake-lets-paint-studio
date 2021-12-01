@@ -8,6 +8,7 @@ import Gallery from './components/gallery/Gallery';
 import Contact from './components/contact/Contact';
 import Reviews from './components/reviews/Reviews';
 import Testimonials from './components/reviews/Testimonials';
+import Quote from './components/quote/Quote';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Gallery />
         <Divider />
         <Contact />
+        <Quote />
       </div>
       <BottomActionList />
     </div>

@@ -4,12 +4,12 @@ import styles from './Contact-styles.module.css';
 
 const Contact = () => {
   return (
-    <section className={styles.container}>
+    <section id="contact" className={styles.container}>
       <div className={`section-title`}>CONTACT US</div>
       <div className={styles.map}>
         <iframe
           loading="lazy"
-          allowfullscreen
+          allowFullScreen
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEbWZToJp1moRtfQN1qXCxTw&key=AIzaSyB0hcBwxZvuc-4sk1u7OxRHb5lVuPYb7fQ"
         ></iframe>
       </div>

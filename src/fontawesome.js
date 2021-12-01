@@ -5,6 +5,7 @@ import {
   faDirections,
   faLeaf,
   faStar,
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faStickyNote, faPhoneAlt, faDirections, faLeaf, faStar);
+library.add(faStickyNote, faPhoneAlt, faDirections, faLeaf, faStar, faTimes);

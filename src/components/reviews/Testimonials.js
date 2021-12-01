@@ -5,7 +5,7 @@ import styles from './Testimonials-styles.module.css';
 
 const Testimonials = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="testimonials">
       <div className={`section-title`}>TESTIMONIALS</div>
       <div className={styles.review}>
         <div className={styles.stars}>

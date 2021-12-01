@@ -1,0 +1,112 @@
+.container {
+  background: var(--secondary-color);
+  color: var(--quote-color);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding-left: 30px;
+  font-weight: var(--font-weight-semi);
+}
+
+.title span {
+  padding-left: 32px;
+}
+
+.container > form {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container > form > div {
+  padding-top: 45px;
+  position: relative;
+}
+
+.container > form > div > input {
+  font-size: var(--font-size-16);
+  border-bottom: 1px solid var(--quote-border);
+  width: 100%;
+  position: relative;
+  z-index: 8;
+  background: none;
+}
+
+.container > form > div > label {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: 7;
+  transition: bottom 0.3s ease;
+}
+
+.container > form > div > input:focus ~ label {
+  bottom: 31px;
+  font-size: 13px;
+  font-weight: var(--font-weight-semi);
+  color: var(--primary-color);
+}
+
+.container > form > div > label.focused {
+  bottom: 31px;
+  font-size: 13px;
+  font-weight: var(--font-weight-semi);
+}
+
+.container > form > div > input:focus {
+  border-bottom: 1px solid var(--primary-color-light);
+}
+
+.email span {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  font-size: 13px;
+}
+
+.container button {
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+/* .container {
+  background: var(--quote-bg);
+  color: var(--third-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form {
+  background: var(--secondary-color);
+}
+
+.container label {
+  font-size: var(--font-size-14);
+}
+
+.container input {
+  font-size: var(--font-size-18);
+}
+
+.container button {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+} */

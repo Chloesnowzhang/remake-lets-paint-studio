@@ -7,9 +7,15 @@ const DropdownMenu = ({ extended }) => {
     <div
       className={`${extended ? styles.containerExtended : styles.container}`}
     >
-      <span>Testimony</span>
-      <span>Gallery</span>
-      <span>Contact</span>
+      <span>
+        <a href="#testimonials">Testimonials</a>
+      </span>
+      <span>
+        <a href="#gallery">Gallery</a>
+      </span>
+      <span>
+        <a href="#contact">Contact</a>
+      </span>
     </div>
   );
 };
