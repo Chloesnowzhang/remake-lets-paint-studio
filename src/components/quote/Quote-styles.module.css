@@ -75,6 +75,29 @@
   font-size: 13px;
 }
 
+.help {
+  margin-top: 20px;
+}
+
+.container > form > div:nth-last-of-type(2) > label {
+  position: relative;
+  display: block;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.help textarea {
+  width: 100%;
+  border-bottom: 1.5px solid var(--quote-border);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.help textarea:focus {
+  border-bottom: 1.5px solid var(--primary-color-light);
+}
+
 .container button {
   margin-top: 34px;
   margin-bottom: 34px;

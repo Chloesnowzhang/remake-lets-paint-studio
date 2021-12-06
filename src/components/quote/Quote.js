@@ -62,9 +62,12 @@ const Quote = () => {
           </label>
           <span>*Valid email address required.</span>
         </div>
-        <div>
+        <div className={styles.help}>
           <label htmlFor="equiry">How can we help you?</label>
-          <textarea placeholder="I was wondering about availability and rates I need hep with the following:"></textarea>
+          <textarea
+            placeholder="I was wondering about availability and rates I need hep with the following:"
+            id="enquiry"
+          ></textarea>
         </div>
         <button type="submit">SUBMIT</button>
         <div>
