@@ -3,10 +3,13 @@ import React, { useState } from 'react';
 import styles from './Quote-styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Input from '../utils/form/Input';
+
 const Quote = () => {
-  const [name, setName] = useState('');
+  const [username, setUsername] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
 
   return (
     <div className={styles.container}>
@@ -16,50 +19,34 @@ const Quote = () => {
       </div>
       <form>
         <div>
-          <input
+          <Input
             type="text"
-            onChange={(e) => setName(e.target.value)}
             name="name"
-            id="name"
-            value={name}
+            label="Name"
+            inputText={username}
+            setInputText={setUsername}
+            className={username.length > 0 ? styles.focused : ''}
           />
-          <label
-            htmlFor="name"
-            className={name.length > 0 ? styles.focused : ''}
-          >
-            Name
-          </label>
         </div>
         <div>
-          <input
+          <Input
             type="text"
-            onChange={(e) => setPhone(e.target.value)}
             name="phone"
-            id="phone"
-            value={phone}
-          />
-          <label
-            htmlFor="phone"
+            label="Phone number"
+            inputText={phone}
+            setInputText={setPhone}
             className={phone.length > 0 ? styles.focused : ''}
-          >
-            Phone number
-          </label>
+          />
         </div>
         <div className={styles.email}>
-          <input
+          <Input
             type="email"
-            onChange={(e) => setEmail(e.target.value)}
             name="email"
-            id="email"
-            value={email}
-            required
-          />
-          <label
-            htmlFor="email"
+            label="Email *"
+            inputText={email}
+            setInputText={setEmail}
             className={email.length > 0 ? styles.focused : ''}
-          >
-            Email *
-          </label>
+          />
           <span>*Valid email address required.</span>
         </div>
         <div className={styles.help}>
@@ -67,12 +54,14 @@ const Quote = () => {
           <textarea
             placeholder="I was wondering about availability and rates I need hep with the following:"
             id="enquiry"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
           ></textarea>
         </div>
         <button type="submit">SUBMIT</button>
         <div>
           Make sure to avoid including any sensitive informaiton you don't want
-          to share with teh business.
+          to share with the business.
         </div>
       </form>
     </div>
