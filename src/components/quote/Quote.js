@@ -4,12 +4,18 @@ import styles from './Quote-styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Input from '../utils/form/Input';
+import Textarea from '../utils/form/Textarea';
 
 const Quote = () => {
   const [username, setUsername] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [text, setText] = useState('');
+  const [textareaInput, setTextareaInput] = useState('');
+
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+    console.log('submitted');
+  };
 
   return (
     <div className={styles.container}>
@@ -17,7 +23,7 @@ const Quote = () => {
         <FontAwesomeIcon icon="times" />
         <span>Get quote</span>
       </div>
-      <form>
+      <form onSubmit={onFormSubmit}>
         <div>
           <Input
             type="text"
@@ -46,20 +52,25 @@ const Quote = () => {
             inputText={email}
             setInputText={setEmail}
             className={email.length > 0 ? styles.focused : ''}
+            required={true}
           />
           <span>*Valid email address required.</span>
         </div>
         <div className={styles.help}>
-          <label htmlFor="equiry">How can we help you?</label>
-          <textarea
+          <Textarea
+            label="How can we help you?"
             placeholder="I was wondering about availability and rates I need hep with the following:"
-            id="enquiry"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-          ></textarea>
+            textareaInput={textareaInput}
+            setTextareaInput={setTextareaInput}
+            name="enquiry"
+            length="1000"
+          />
         </div>
-        <button type="submit">SUBMIT</button>
-        <div>
+        <div className={styles.btn}>
+          <button type="submit">SUBMIT</button>
+        </div>
+
+        <div className={styles.caption}>
           Make sure to avoid including any sensitive informaiton you don't want
           to share with the business.
         </div>

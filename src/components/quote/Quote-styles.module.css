@@ -27,6 +27,8 @@
 .container > form {
   padding-left: 30px;
   padding-right: 30px;
+  overflow-y: auto;
+  height: calc(100vh - 56px);
 }
 
 .container > form > div {
@@ -79,7 +81,12 @@
   margin-top: 20px;
 }
 
-.container > form > div:nth-last-of-type(2) > label {
+.help div {
+  font-size: 13px;
+  text-align: right;
+}
+
+.container > form > div:nth-last-of-type(3) > label {
   position: relative;
   display: block;
   margin-bottom: 0.8rem;
@@ -92,15 +99,23 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  font-style: italic;
+  font-size: var(--font-size-16);
 }
 
 .help textarea:focus {
   border-bottom: 1.5px solid var(--primary-color-light);
 }
 
-.container button {
-  margin-top: 34px;
-  margin-bottom: 34px;
+.btn {
+  text-align: right;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+
+.caption {
+  font-size: var(--font-size-14);
+  padding-bottom: 30px;
 }
 
 /* .container {

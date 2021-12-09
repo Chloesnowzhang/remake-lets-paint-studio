@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
   /* colors */
@@ -30,6 +30,9 @@
   --font-weight-semi: 600;
   --font-weight-bold: 700;
 
+  /* font styles */
+  --font-italic: italic;
+
   /* navbar/footer heights */
   --nav-footer-height-70: 70px;
   --nav-footer-height-64: 64px;
@@ -60,6 +63,7 @@ body {
   background-color: var(--secondary-color);
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 img {
@@ -124,32 +128,18 @@ button {
 .container {
   position: relative;
   z-index: 1;
-  overflow-x: hidden;
   text-align: justify;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-flow: column;
-  padding-top: 70px;
-}
-
-@media (min-width: 577px) {
-  .container {
-    display: flex;
-    flex-flow: column;
-  }
-}
-
-@media (min-width: 769px) {
-  .container {
-    padding-top: 64px;
-  }
+  flex-direction: column;
 }
 
 .main-content-container {
+  overflow-y: auto;
   display: flex;
   flex-flow: column;
-  padding: 2px 8px 0;
+  padding: 72px 8px 0;
   width: 100%;
 }
 
@@ -157,6 +147,7 @@ button {
   .main-content-container {
     padding-left: 35px;
     padding-right: 35px;
+    padding-top: 72px;
   }
 }
 
@@ -164,6 +155,7 @@ button {
   .main-content-container {
     padding-left: 80px;
     padding-right: 80px;
+    padding-top: 64px;
   }
 }
 

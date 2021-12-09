@@ -24,8 +24,8 @@ function App() {
         <Gallery />
         <Divider />
         <Contact />
-        <Quote />
       </div>
+      <Quote />
       <BottomActionList />
     </div>
   );
