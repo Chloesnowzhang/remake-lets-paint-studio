@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Input from '../utils/form/Input';
 import Textarea from '../utils/form/Textarea';
 
-const Quote = () => {
+const Quote = ({ close, setClose }) => {
   const [username, setUsername] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -18,9 +18,17 @@ const Quote = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${close ? styles.close : styles.container}`}>
       <div className={styles.title}>
-        <FontAwesomeIcon icon="times" />
+        <span
+          className="clickable"
+          onClick={() => {
+            setClose(true);
+          }}
+        >
+          <FontAwesomeIcon icon="times" />
+        </span>
+
         <span>Get quote</span>
       </div>
       <form onSubmit={onFormSubmit}>

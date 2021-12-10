@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 
 import BottomActionList from './components/displays/bottomActionList/BottomActionList';
 import NavbarMenu from './components/displays/navbarMenu/NavbarMenu';
@@ -11,11 +12,13 @@ import Testimonials from './components/reviews/Testimonials';
 import Quote from './components/quote/Quote';
 
 function App() {
+  const [close, setClose] = useState(true);
+
   return (
     <div className="container">
-      <NavbarMenu />
+      <NavbarMenu setClose={setClose} />
       <div className="main-content-container">
-        <TopSection />
+        <TopSection setClose={setClose} />
         <Divider />
         <Testimonials />
         <Divider />
@@ -25,8 +28,8 @@ function App() {
         <Divider />
         <Contact />
       </div>
-      <Quote />
-      <BottomActionList />
+      <Quote close={close} setClose={setClose} />
+      <BottomActionList setClose={setClose} />
     </div>
   );
 }

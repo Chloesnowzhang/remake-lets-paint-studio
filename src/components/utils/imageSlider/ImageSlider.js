@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './ImageSlider-styles.module.css';
 import { images } from './slideData';
-import Arrow from './Arrow';
 
 const ImageSlider = () => {
   const [current, setCurrent] = useState(0);

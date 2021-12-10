@@ -139,7 +139,7 @@ button {
   overflow-y: auto;
   display: flex;
   flex-flow: column;
-  padding: 72px 8px 0;
+  padding: 72px 8px 25px;
   width: 100%;
 }
 
@@ -161,9 +161,8 @@ button {
 
 @media (min-width: 1080px) {
   .main-content-container {
-    width: 75vw;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
     align-items: center;
     align-self: center;
   }

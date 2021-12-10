@@ -52,10 +52,14 @@
 }
 
 .contact > span:first-child,
-.contact > span:nth-child(2),
 .address > span:first-child,
-.address > span:nth-child(2),
 .hours > span:first-child {
+  margin-bottom: 1rem;
+}
+
+.address > a,
+.contact > a {
+  display: flex;
   margin-bottom: 1rem;
 }
 

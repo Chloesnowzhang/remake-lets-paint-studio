@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Navbar-styles.module.css';
 import Hamburger from '../../../utils/hamburger/Hamburger';
 
-const Navbar = ({ extended, setExtended }) => {
+const Navbar = ({ extended, setExtended, setClose }) => {
   return (
     <div className={styles.container}>
       <div className={styles.hamburger}>
@@ -16,7 +16,14 @@ const Navbar = ({ extended, setExtended }) => {
         <span>
           <FontAwesomeIcon icon="sticky-note" />
         </span>
-        <span>Get Quote</span>
+        <span
+          className="clickable"
+          onClick={() => {
+            setClose(false);
+          }}
+        >
+          Get Quote
+        </span>
       </div>
       <div className={styles.menuItem}>
         <span>
