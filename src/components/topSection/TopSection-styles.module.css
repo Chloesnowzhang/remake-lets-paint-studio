@@ -1,6 +1,8 @@
 .container {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
@@ -30,8 +32,8 @@
 
 @media (min-width: 577px) {
   .container {
-    display: flex;
-    flex-direction: column-reverse;
+    /*  display: flex;
+    flex-direction: column-reverse; */
     padding-bottom: 40px;
   }
 
