@@ -32,8 +32,8 @@
 
 @media (min-width: 577px) {
   .container {
-    /*  display: flex;
-    flex-direction: column-reverse; */
+    display: flex;
+    flex-direction: column-reverse;
     padding-bottom: 40px;
   }
 

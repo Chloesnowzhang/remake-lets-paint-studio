@@ -63,6 +63,8 @@ body {
   background-color: var(--secondary-color);
   position: relative;
   overflow: hidden;
+  /* test */
+  height: 100%;
 }
 
 img {
