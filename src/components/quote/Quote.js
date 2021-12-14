@@ -14,7 +14,10 @@ const Quote = ({ close, setClose }) => {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-    console.log('submitted');
+    setUsername('');
+    setPhone('');
+    setEmail('');
+    setTextareaInput('');
   };
 
   return (
