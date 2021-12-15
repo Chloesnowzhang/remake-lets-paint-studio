@@ -63,7 +63,6 @@ body {
   background-color: var(--secondary-color);
   position: relative;
   overflow: hidden;
-  /* test */
   height: 100%;
 }
 
@@ -145,12 +144,12 @@ button {
 }
 
 @media (min-width: 577px) {
-  .main-content-container {
+  /*  .main-content-container {
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 72px;
     padding-bottom: 16px;
-  }
+  } */
 }
 
 @media (min-width: 768px) {
