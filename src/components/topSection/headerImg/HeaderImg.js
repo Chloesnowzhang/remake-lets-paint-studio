@@ -11,13 +11,3 @@ const HeaderImg = () => {
 };
 
 export default HeaderImg;
-/* <picture>
-      <source
-        srcSet="https://i.ibb.co/ZMpDCcH/flinders-street.jpg"
-        media="(max-width: 576px)"
-      />
-      <img
-        src="https://i.ibb.co/bKM9nNH/flinders-street.jpg"
-        alt="Watercolor of Flinders Street"
-      />
-    </picture> */

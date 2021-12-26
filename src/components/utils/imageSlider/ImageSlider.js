@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './ImageSlider-styles.module.css';
 import { images } from './slideData';
+import Picture from '../picture/Picture';
 
 const ImageSlider = () => {
   const [current, setCurrent] = useState(0);
@@ -25,10 +26,13 @@ const ImageSlider = () => {
       <div className={styles.slider}>
         <div className={`${styles.slides} ${styles[`breakpoint` + current]}`}>
           {images.map((image, index) => (
-            <picture key={index}>
-              <source srcSet={image.lgImg} media="(min-width: 768px)" />
-              <img alt="Business" src={image.smImg} />
-            </picture>
+            <Fragment key={index}>
+              <Picture
+                srcsetUrl={image.img}
+                imgUrl={image.img}
+                alt={image.title}
+              />
+            </Fragment>
           ))}
         </div>
         <div className={styles.leftArr} onClick={slidePrev}>
