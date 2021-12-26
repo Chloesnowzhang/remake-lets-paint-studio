@@ -93,7 +93,7 @@
 }
 
 @media (min-width: 577px) {
-  /*  .container {
+  .container {
     width: 100%;
   }
 
@@ -178,7 +178,7 @@
 
   .breakpoint8 {
     left: calc(var(--slide-img-width-577) * 8);
-  } */
+  }
 }
 
 @media (min-width: 769px) {

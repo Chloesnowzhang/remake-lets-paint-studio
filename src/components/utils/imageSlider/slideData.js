@@ -1,38 +1,56 @@
+import studio550 from './slideImages/studio-550.jpeg';
+import studio668 from './slideImages/studio-668.jpeg';
+
+import balloon550 from './slideImages/balloon-550.jpeg';
+import balloon668 from './slideImages/balloon-668.jpeg';
+import countryside550 from './slideImages/countryside-550.jpeg';
+import countryside668 from './slideImages/countryside-668.jpeg';
+import flinderSquare550 from './slideImages/flinders-square-550.jpg';
+import flinderSquare668 from './slideImages/flinders-square-668.jpg';
+import girl550 from './slideImages/girl-550.jpeg';
+import girl668 from './slideImages/girl-668.jpeg';
+import glass550 from './slideImages/glass-550.jpeg';
+import glass668 from './slideImages/glass-668.jpeg';
+import paint550 from './slideImages/paint-550.jpeg';
+import paint668 from './slideImages/paint-668.jpeg';
+import studio2550 from './slideImages/studio2-550.jpeg';
+import studio2668 from './slideImages/studio2-668.jpeg';
+
 export const images = [
   {
-    lgImg: 'https://i.ibb.co/Y3nPQ0t/studio.jpg',
-    smImg: 'https://i.ibb.co/SPY5yfK/studio.jpg',
+    lgImg: studio668,
+    smImg: studio550,
   },
   {
-    lgImg: 'https://i.ibb.co/txt7fKP/girl.jpg',
-    smImg: 'https://i.ibb.co/HxsWv4p/girl.jpg',
+    lgImg: girl668,
+    smImg: girl550,
   },
   {
-    lgImg: 'https://i.ibb.co/6JZKk6b/balloon.jpg',
-    smImg: 'https://i.ibb.co/3YsxntW/balloon.jpg',
+    lgImg: balloon668,
+    smImg: balloon550,
   },
   {
-    lgImg: 'https://i.ibb.co/hWpQhy8/countryside.jpg',
-    smImg: 'https://i.ibb.co/0MP48cJ/countryside.jpg',
+    lgImg: countryside668,
+    smImg: countryside550,
   },
   {
-    lgImg: 'https://i.ibb.co/CnRR9nC/studio2.jpg',
-    smImg: 'https://i.ibb.co/dQ88pQC/studio2.jpg',
+    lgImg: studio2668,
+    smImg: studio2550,
   },
   {
-    lgImg: 'https://i.ibb.co/Y3nPQ0t/studio.jpg',
-    smImg: 'https://i.ibb.co/SPY5yfK/studio.jpg',
+    lgImg: studio668,
+    smImg: studio550,
   },
   {
-    lgImg: 'https://i.ibb.co/mRCfZkr/paint.jpg',
-    smImg: 'https://i.ibb.co/grMkqNb/paint.jpg',
+    lgImg: paint668,
+    smImg: paint550,
   },
   {
-    lgImg: 'https://i.ibb.co/vJSrVJC/glass.jpg',
-    smImg: 'https://i.ibb.co/RCqMYCG/glass.jpg',
+    lgImg: glass668,
+    smImg: glass550,
   },
   {
-    lgImg: 'https://i.ibb.co/PTm4nGK/flinders-square.jpg',
-    smImg: 'https://i.ibb.co/hX7HjFb/flinders-square.jpg',
+    lgImg: flinderSquare668,
+    smImg: flinderSquare550,
   },
 ];
