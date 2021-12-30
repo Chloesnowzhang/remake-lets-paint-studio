@@ -6,13 +6,14 @@
   flex-direction: row;
   justify-content: space-around;
   font-size: var(--font-size-14);
+  flex-shrink: 0;
 }
 
 @media (min-width: 577px) {
-  /*  .container {
+  .container {
     font-size: var(--font-size-16);
     padding: 25px 10%;
-  } */
+  }
 }
 
 @media (min-width: 769px) {
